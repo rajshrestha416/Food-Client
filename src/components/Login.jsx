@@ -34,7 +34,7 @@ const Login = () => {
           email: result.user?.email,
           name: result.user?.displayName
       }
-      axiosPublic.post('/users', userInfo)
+      axiosPublic.post('/users/login', userInfo)
       .then(res =>{
           console.log(res.data);
           navigate('/');

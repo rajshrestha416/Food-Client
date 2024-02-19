@@ -5,38 +5,39 @@ const Footer = () => {
   const { isDarkMode } = useTheme();
   return (
     <div>
-      <footer className={`footer xl:px-24 py-10 px-4 text-base-content ${
-          isDarkMode ? "dark" : "" 
+      <footer className={`footer xl:px-24 py-10 px-4 text-base-content ${isDarkMode ? "dark" : ""
         }`}>
         <aside>
           <img src="/logo.png" alt="" />
           <p className="my-3 md:w-40">
-             Every dish is a culinary masterpiece from out cloud resturant
+            Every dish is a culinary masterpiece from out cloud resturant
           </p>
         </aside>
         <nav>
-          <header className="footer-title text-black">Useful links</header>
+          <header className={`${isDarkMode ? "!text-white" : " "
+            } footer-title`}>Useful links</header>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Events</a>
           <a className="link link-hover">Blogs</a>
           <a className="link link-hover">FAQ</a>
         </nav>
         <nav>
-          <header className="footer-title">Main Menu</header>
+          <header className={`${isDarkMode ? "!text-white" : " "
+            } footer-title`}>Main Menu</header>
           <a className="link link-hover">Home</a>
           <a className="link link-hover">Offers</a>
           <a className="link link-hover">Menus</a>
           <a className="link link-hover">Booking</a>
         </nav>
         <nav>
-          <header className="footer-title">Contact Us</header>
+          <header className={`${isDarkMode ? "!text-white" : " "
+            } footer-title`}>Contact Us</header>
           <a className="link link-hover">Pokhrelsrijan5@gmail.com</a>
           <a className="link link-hover">+977 9876543210</a>
         </nav>
       </footer>
-        <hr />
-      <footer  className={`footer items-center xl:px-24 px-4 py-4 mt-2 ${
-          isDarkMode ? "dark" : "" 
+      <hr />
+      <footer className={`footer items-center xl:px-24 px-4 py-4 mt-2 ${isDarkMode ? "dark" : ""
         }`}>
         <aside className="items-center grid-flow-col">
           <p>Shrijan Pokharel © 2024 - All right reserved</p>

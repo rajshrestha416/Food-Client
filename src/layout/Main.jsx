@@ -17,10 +17,12 @@ const Main = () => {
   }, [isDarkMode]);
   return (
     <div className={`bg-${isDarkMode ? "dark" : "primaryBG"}`}>
+
       {loading ? (
         <LoadingSpinner />
       ) : (
         <div className="relative">
+
           <Navbar />
           <div className="fixed top-14 lg:top-0  right-0 p-5 themediv">
             <input

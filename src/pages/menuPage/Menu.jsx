@@ -16,7 +16,7 @@ const Menu = () => {
     // Fetch data from the backend
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/menu");
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}menu`);
         const data = await response.json();
         setMenu(data);
         setFilteredItems(data); // Initially, display all items
